@@ -47,14 +47,14 @@ const CheckoutForm = ({ amount }) => {
           setSuccess(true);
           alert('Thank you for purchasing');
   
-          // Send invoice
+          
           await axios.post('http://localhost:5000/send-invoice', {
             email,
             name,
             amount,
           });
   
-          // Update user's premium status
+          
           console.log(`Updating premium status for email: ${email} with amount: ${amount}`);
           await axios.post('http://localhost:5000/update-premium', {
             email,
