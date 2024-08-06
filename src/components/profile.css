@@ -1,26 +1,26 @@
 .profile {
     padding-top: 2%;
     height: 100%;
-    max-height: 100vh; /* Set max-height to viewport height */
+    max-height: 100vh; 
     width: 650px;
     border-right: 1px solid rgb(36, 34, 34);
     position: relative;
     color: white;
     background-color: black;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto; 
 }
 
 .up {
     display: flex;
     flex-direction: row;
-    align-items: center; /* Ensure items are centered vertically */
-    white-space: nowrap; /* Prevent text from wrapping */
+    align-items: center; 
+    white-space: nowrap; 
     padding-left: 3%;
     height: 70px;
 }
 
 .icon1 {
-    margin-right: 10px; /* Adjust margin for better spacing */
+    margin-right: 10px;
     position: absolute;
 }
 
@@ -42,16 +42,16 @@
     height: 200px;
 }
 .profile-photo {
-    width: 130px; /* Adjust the size as needed */
-    height: 130px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image circular */
+    width: 130px; 
+    height: 130px; 
+    border-radius: 50%;
     margin-left: 10px; 
     position: relative;
-    bottom: 50px;/* Space between the image and the text */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow */
+    bottom: 50px;
+    transition: box-shadow 0.3s ease-in-out;
 }
 .profile-photo.premium {
-    box-shadow: 0 0 10px 4px rgba(0, 0, 255, 0.5); /* Blue neon shadow */
+    box-shadow: 0 0 10px 4px rgba(0, 0, 255, 0.5); 
 }
 .profileN {
     font-size: 25px;
