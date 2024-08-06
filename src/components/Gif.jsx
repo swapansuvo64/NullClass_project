@@ -14,8 +14,8 @@ const Gif = ({ onSelectGif, onClose }) => {
         const response = await axios.get('https://api.giphy.com/v1/gifs/trending', {
           params: {
             api_key: 'PsiL1rJuiXC6vLkSFzOiGGNTERqPk4AZ',
-            limit: 20, // Number of suggested GIFs to fetch
-            rating: 'g', // Example rating, adjust as needed
+            limit: 20, 
+            rating: 'g', 
           }
         });
         const gifResults = response.data.data;
@@ -34,7 +34,7 @@ const Gif = ({ onSelectGif, onClose }) => {
         params: {
           api_key: 'PsiL1rJuiXC6vLkSFzOiGGNTERqPk4AZ',
           q: gifSearchTerm,
-          rating: 'g', // Example rating, adjust as needed
+          rating: 'g',
         }
       });
       const gifResults = response.data.data;
@@ -45,8 +45,8 @@ const Gif = ({ onSelectGif, onClose }) => {
   };
 
   const handleSelectGif = (gifUrl) => {
-    onSelectGif(gifUrl); // Pass selected GIF URL to parent component
-    onClose(); // Close the GIF selection popup
+    onSelectGif(gifUrl);
+    onClose(); 
     setGifSearchTerm('');
     setSearchResults([]);
   };
@@ -56,7 +56,7 @@ const Gif = ({ onSelectGif, onClose }) => {
     if (e.target.value.trim() !== '') {
       handleGifSearch();
     } else {
-      setSearchResults([]); // Clear search results if search term is empty
+      setSearchResults([]);
     }
   };
 
@@ -71,7 +71,7 @@ const Gif = ({ onSelectGif, onClose }) => {
             type="text"
             placeholder="Search GIFs"
             value={gifSearchTerm}
-            onChange={handleChange} // Call handleChange on input change
+            onChange={handleChange} 
           />
         </form>
         <div className="gif-search-results">
