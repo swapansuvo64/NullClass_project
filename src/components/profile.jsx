@@ -20,7 +20,7 @@ const Profile = () => {
                         params: { uid: user.uid }
                     });
 
-                    console.log('Response from server:', response); // Log the entire response
+                    console.log('Response from server:', response); 
 
                     if (response.status === 200) {
                         const userPremium = response.data.premium;
