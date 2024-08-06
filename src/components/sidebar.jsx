@@ -38,14 +38,14 @@ function Sidebar() {
   };
 
   const handleLanguageClick = () => {
-    setIsPhoneAuthOpen(true); // Open PhoneAuth popup
+    setIsPhoneAuthOpen(true);
   };
 
   const handleClosePhoneAuth = () => {
-    setIsPhoneAuthOpen(false); // Close PhoneAuth popup
+    setIsPhoneAuthOpen(false);
   };
 
-  // Debugging
+ 
   console.log('User:', user);
 
   return (
