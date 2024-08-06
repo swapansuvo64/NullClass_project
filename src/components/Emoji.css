@@ -1,0 +1,76 @@
+.emoji-popup {
+    position: fixed;
+    top: 50%;
+    
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 300px; /* Adjusted width for better visibility */
+    height: 220px; /* Adjusted height for better visibility */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(36, 34, 34);
+    color: white; /* Ensure text is readable on black background */
+    z-index: 10; /* Ensure the popup is above other content */
+    margin-top: 180px;
+    margin-right: 10px;
+  }
+  
+  .emoji-popup-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure content takes full height of popup */
+  }
+  
+  .emoji-popup-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white; /* Ensure close button is readable */
+  }
+  
+  .emoji-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .emoji-category {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    color: white; /* Ensure category buttons are readable */
+  }
+  
+  .emoji-category.active {
+    font-weight: bold;
+    border-bottom: 2px solid white; /* Highlight active category */
+  }
+  
+  .emoji-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: calc(100% - 50px); /* Adjusted height for search results */
+    overflow-y: auto;
+  }
+  
+  .emoji-item {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .emoji-item:hover {
+    transform: scale(1.2);
+  }
+  

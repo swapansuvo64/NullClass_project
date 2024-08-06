@@ -1,0 +1,168 @@
+.page {
+  padding-top: 2%;
+  height: 100%;
+  width: 650px;
+  border-right:  1px solid rgb(36, 34, 34);
+  position:relative;
+  overflow-y: auto; 
+  max-height: 100vh; 
+  color: white;
+}
+
+.upper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  gap: 280px;
+  font-weight: bolder;
+}
+.feed-post-container {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 0px;
+  max-width: 600px;
+  margin: 0 auto; /* Center the div on the page */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  overflow-y: auto;
+  transition: height 0.2s ease; /* Smooth transition for height change */
+  transition: color 0.3s ease;
+  margin-top: 5%;
+  border-bottom:  1px solid rgb(36, 34, 34);
+  border-top:  1px solid rgb(36, 34, 34);
+}
+
+.feed-close-button {
+  display: none; /* No need for a close button in a normal div */
+}
+
+.feed-post-container .feed-char-limit {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.feed-post-container .feed-char-limit.feed-yellow {
+  color: yellow;
+}
+
+.feed-post-container .feed-char-limit.feed-red {
+  color: red;
+}
+
+.feed-post-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.feed-post-header img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.feed-post-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.feed-post-input::placeholder {
+  color: grey;
+}
+
+.feed-char-limit {
+  color: grey;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.feed-selected-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.feed-post-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feed-post-buttons button {
+  background-color: #1da1f2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.feed-post-buttons button:disabled {
+  background-color: #3b4c5a;
+  cursor: not-allowed;
+}
+
+.feed-post-buttons .feed-extras {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feed-post-buttons .feed-extras svg {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.feed-selected-image-container {
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+}
+.premium {
+  box-shadow:  0 0 20px 5px rgba(0, 0, 255, 0.5);;
+  border-radius: 50%; /* Adjust based on your design */
+}
+
+.premium-post {
+  border: 2px solid gold;
+  background-color: #f9f9f9;
+}
+
+.post-profile-pic.premium {
+  box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+  border-radius: 50%;
+}
+
+.feed-deselect-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.feed-deselect-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+

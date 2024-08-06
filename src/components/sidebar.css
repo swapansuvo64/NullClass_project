@@ -1,0 +1,144 @@
+.sidebar {
+  padding-top: 2%;
+  height: 100%;
+  width: 300px;
+  border-right: 1px solid rgb(36, 34, 34);
+  position:relative;
+}
+
+  
+  .sidebarItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the gap between items */
+  }
+  
+  .items {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .img {
+    height: 40px;
+    width: 40px;
+    padding-left: 21%;
+  }
+  .sidebarLink {
+    text-decoration: none;
+    color: inherit; /* or specify the desired color */
+  }
+  
+
+  
+  /* Ensure your other styles are included or updated as needed */
+  
+
+  
+  .icondiv {
+    width: 50px; /* Adjust width as needed */
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    padding-left: 20%;
+  }
+  
+  .icon {
+    color: white;
+  }
+  
+  .text {
+    color: white;
+    margin-left: 10px; 
+    font-size: 20px;
+    /* Add spacing between icon and text */
+  }
+  .tweet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  
+  .postButton {
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color:#1d9bf0;
+    color: white;
+    border-radius: 25px; /* half of the height to make it round */
+    cursor: pointer;
+    font-size: 14px; /* adjust font size as needed */
+    outline: none; /* remove default focus outline */
+    font-weight: bolder;
+    font-size: 15px;
+  }
+  
+  .postButton:hover {
+    background-color: darkblue; /* darken color on hover if desired */
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+  }
+  .item:hover {
+    background-color: rgb(36, 34, 34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for hover effect */
+  }
+  
+  .user {
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+  }
+
+  .user:hover {
+    background-color: rgb(36, 34, 34);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow for hover effect */
+  }
+  .circularpicture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20%;
+  }
+  
+  .circularpicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .username {
+    margin-left: 10px;
+    flex: 1;
+    color: white;
+    font-size: 16px;
+    font-weight: 15px;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+  }
+  
+  
+  .logout {
+    margin-right: 50px;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .logout.sign {
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    height: 50px;
+    width: 50px;
+
+  }
+  

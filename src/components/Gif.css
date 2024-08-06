@@ -1,0 +1,86 @@
+.gif-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 600px;
+    height: 450px; /* Increased height for the popup */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid  rgb(36, 34, 34);
+  }
+  
+  .gif-popup-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gif-popup-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .gif-search-form {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 1px;
+    right: 1px;
+    height: 35px;
+    bottom: 100px;
+  }
+  
+  .gif-search-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+    height: 30px;
+    width: 100%;
+    border: 1px solid  rgb(90, 90, 231);
+  }
+  
+  .gif-search-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .gif-search-results {
+    overflow-y: auto;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    height: calc(100% - 70px); /* Adjusted height for search results */
+  }
+  
+  .gif-result {
+    cursor: pointer;
+    max-width: 100%;
+    height: 100%; /* Ensures each GIF fills its grid cell */
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .gif-result:hover {
+    transform: scale(1.1);
+  }
+  

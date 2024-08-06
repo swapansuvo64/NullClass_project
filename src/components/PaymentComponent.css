@@ -1,0 +1,81 @@
+.payment-container {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(36, 34, 34);
+  color: white;
+  align-items: center;
+}
+
+.payment-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  position: relative;
+  right: 0px;
+  top: 10px;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 0px;
+  top: 30px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555; /* Darker border for contrast */
+  border-radius: 5px;
+  font-size: 16px;
+  color: white; /* Text color inside input */
+  background-color: rgb(50, 50, 50); /* Slightly lighter background color for input */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  color: white;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
