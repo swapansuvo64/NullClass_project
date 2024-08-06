@@ -8,16 +8,16 @@ const AllPost = () => {
   useEffect(() => {
     const fetchAllPosts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/all-posts'); // Adjust endpoint as needed
+        const response = await fetch('http://localhost:5000/all-posts'); 
         if (!response.ok) {
           throw new Error('Failed to fetch posts');
         }
         const data = await response.json();
-        console.log('Fetched all posts:', data); // Log the fetched data for debugging
+        console.log('Fetched all posts:', data); 
         setPosts(data);
       } catch (error) {
         console.error('Error fetching all posts:', error);
-        setError('Failed to fetch posts.'); // Set error message
+        setError('Failed to fetch posts.'); 
       }
     };
 
@@ -25,7 +25,7 @@ const AllPost = () => {
   }, []);
 
   if (error) {
-    return <p>{error}</p>; // Display error message if any
+    return <p>{error}</p>;
   }
 
   return (
