@@ -13,12 +13,12 @@ const Post = ({ onClose }) => {
   const [content, setContent] = useState('');
   const [textareaRows, setTextareaRows] = useState(1);
   const [selectedImages, setSelectedImages] = useState([]);
-  const [showGifPopup, setShowGifPopup] = useState(false); // State to control GIF popup visibility
-  const [showEmojiPopup, setShowEmojiPopup] = useState(false); // State to control Emoji popup visibility
-  const [locationPermission, setLocationPermission] = useState(false); // State to manage location permission
-  const [location, setLocation] = useState(''); // State to manage location information
-  const [premium, setPremium] = useState(null); // State to store premium field
-  const [maxCharLimit, setMaxCharLimit] = useState(200); // State for max character limit
+  const [showGifPopup, setShowGifPopup] = useState(false); 
+  const [showEmojiPopup, setShowEmojiPopup] = useState(false); 
+  const [locationPermission, setLocationPermission] = useState(false); 
+  const [location, setLocation] = useState(''); 
+  const [premium, setPremium] = useState(null); 
+  const [maxCharLimit, setMaxCharLimit] = useState(200); 
 
   const textareaRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -36,7 +36,7 @@ const Post = ({ onClose }) => {
             params: { uid: user.uid }
           });
 
-          console.log('Response from server:', response); // Log the entire response
+          console.log('Response from server:', response); 
 
           if (response.status === 200) {
             const userPremium = response.data.premium;
@@ -104,7 +104,7 @@ const Post = ({ onClose }) => {
       });
   
       if (response.status === 403) {
-        // Handle post limit reached
+        
         alert('Post limit reached for today. Please try again tomorrow.');
         window.location.href = '/subscription';
         return;
@@ -114,11 +114,11 @@ const Post = ({ onClose }) => {
         throw new Error('Failed to post data');
       }
   
-      // Close the post popup after successful submission
+      
       onClose();
     } catch (error) {
       console.error('Error posting data:', error);
-      // Handle error (e.g., show error message to user)
+      
     }
   };
   
@@ -127,21 +127,21 @@ const Post = ({ onClose }) => {
   };
 
   const handleGifIconClick = () => {
-    setShowGifPopup(true); // Show GIF popup when MdGif icon is clicked
+    setShowGifPopup(true); 
   };
 
   const handleSelectGif = (gifUrl) => {
     setSelectedImages(prevImages => [...prevImages, gifUrl]);
-    setShowGifPopup(false); // Hide GIF popup after selecting a GIF
+    setShowGifPopup(false); 
   };
 
   const handleEmojiIconClick = () => {
-    setShowEmojiPopup(true); // Show Emoji popup when FiSmile icon is clicked
+    setShowEmojiPopup(true); 
   };
 
   const handleSelectEmoji = (emoji) => {
-    setContent(prevContent => prevContent + emoji); // Append selected emoji to the content
-    setShowEmojiPopup(false); // Hide Emoji popup after selecting an emoji
+    setContent(prevContent => prevContent + emoji); 
+    setShowEmojiPopup(false); 
   };
 
   const handleDeselectImage = (index) => {
@@ -171,7 +171,7 @@ const Post = ({ onClose }) => {
         const { city, principalSubdivision, countryCode } = data;
         const fetchedLocation = `${city}, ${principalSubdivision}, ${countryCode}`;
         setLocation(fetchedLocation);
-        setLocationPermission(true); // Grant permission after fetching location
+        setLocationPermission(true); 
       })
       .catch(error => {
         console.error('Error fetching location data:', error);
