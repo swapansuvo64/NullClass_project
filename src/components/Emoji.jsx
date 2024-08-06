@@ -10,7 +10,7 @@ const Emoji = ({ onSelectEmoji, onClose }) => {
       try {
         const response = await axios.get('https://emoji-api.com/emojis', {
           params: {
-            access_key: '421f16a5d1096a1e7ddad1950d61db90578ef00b' // Replace with your Emoji API key
+            access_key: '421f16a5d1096a1e7ddad1950d61db90578ef00b' 
           }
         });
         setEmojis(response.data);
