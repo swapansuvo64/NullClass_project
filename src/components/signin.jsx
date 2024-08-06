@@ -31,9 +31,9 @@ const Sign = () => {
     ] = useSignInWithGoogle(auth);
 
     useEffect(() => {
-        const device = navigator.userAgent; // Get the device information
+        const device = navigator.userAgent; 
 
-        // Fetch the user's IP address
+       
         const fetchIpAddress = async () => {
             try {
                 const response = await axios.get('https://api.ipify.org?format=json');
@@ -53,8 +53,8 @@ const Sign = () => {
                 photoURL: googleUser.user.photoURL || '',
                 uid: googleUser.user.uid,
                 premium: 'Nan',
-                device: device, // Add device info
-                ipAddress: ipAddress // Add IP address
+                device: device, 
+                ipAddress: ipAddress 
             };
 
             axios.post('http://localhost:5000/register', userToSave)
@@ -64,7 +64,7 @@ const Sign = () => {
                 })
                 .catch(error => {
                     setError(error.message);
-                    navigate('/feed');  // Navigate to /feed even if the registration fails
+                    navigate('/feed');  
                 });
         } else if (user) {
             const userToSave = {
@@ -74,8 +74,8 @@ const Sign = () => {
                 photoURL: "",
                 uid: user.user.uid,
                 premium: 'Nan',
-                device: device, // Add device info
-                ipAddress: ipAddress // Add IP address
+                device: device, 
+                ipAddress: ipAddress 
             };
 
             axios.post('http://localhost:5000/register', userToSave)
