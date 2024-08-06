@@ -18,7 +18,7 @@ const Feed = () => {
   const [showEmojiPopup, setShowEmojiPopup] = useState(false);
   const [locationPermission, setLocationPermission] = useState(false);
   const [location, setLocation] = useState('');
-  const [isPremium, setIsPremium] = useState(false); // State to manage user's premium status
+  const [isPremium, setIsPremium] = useState(false); 
   const maxCharLimit = 200;
   const textareaRef = useRef(null);
   const fileInputRef = useRef(null);
@@ -28,7 +28,7 @@ const Feed = () => {
   }, [content]);
 
   useEffect(() => {
-    // Fetch user details to check if the user is premium
+    
     const fetchUserDetails = async () => {
       if (user) {
         try {
@@ -37,7 +37,7 @@ const Feed = () => {
             params: { uid: user.uid }
           });
 
-          console.log('Response from server:', response); // Log the entire response
+          console.log('Response from server:', response); 
 
           if (response.status === 200) {
             const userPremium = response.data.premium;
