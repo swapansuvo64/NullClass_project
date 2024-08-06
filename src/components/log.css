@@ -1,4 +1,4 @@
-/* Ensure html and body take full height */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,13 +6,13 @@ html, body {
     background-color: black;
 }
 
-/* Styling for the login container */
+
 .login {
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Cover full viewport height */
+    height: 100vh; 
     color: aliceblue;
 }
 
