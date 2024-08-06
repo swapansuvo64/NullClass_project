@@ -62,10 +62,10 @@
     border: none;
     background-color:#1d9bf0;
     color: white;
-    border-radius: 25px; /* half of the height to make it round */
+    border-radius: 25px; 
     cursor: pointer;
-    font-size: 14px; /* adjust font size as needed */
-    outline: none; /* remove default focus outline */
+    font-size: 14px;
+    outline: none; 
     font-weight: bolder;
     font-size: 15px;
     justify-content: center;
@@ -73,5 +73,5 @@
     
 }
 .Subscribe_btn:hover {
-    background-color: darkblue; /* darken color on hover if desired */
+    background-color: darkblue; 
   }
