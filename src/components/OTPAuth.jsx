@@ -32,8 +32,8 @@ const OTPAuth = ({ onClose }) => {
       const response = await axios.post('http://localhost:5000/verifyOTP', { email, otp });
       if (response.data.message === 'OTP verified') {
         alert('OTP verified successfully');
-        onClose(); // Close the pop-up after successful OTP verification
-        navigate('/language-selector'); // Redirect to LanguageSelector component
+        onClose(); 
+        navigate('/language-selector'); 
       } else {
         setError('Invalid OTP. Please try again.');
       }
