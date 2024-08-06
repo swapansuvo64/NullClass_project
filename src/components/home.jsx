@@ -12,11 +12,11 @@ const Home = () => {
 
     const handleLogout = () => {
         auth.signOut().then(() => {
-            // Redirect to login page or any other page after logout
+            
             navigate('/login');
         }).catch((error) => {
             console.error('Error signing out:', error);
-            // Handle any errors during logout
+            
         });
     };
 
