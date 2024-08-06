@@ -23,7 +23,7 @@
   position: relative;
   color: white;
   overflow-y: auto;
-  transition: height 0.2s ease; /* Smooth transition for height change */
+  transition: height 0.2s ease; 
   transition: color 0.3s ease;
 }
 
@@ -37,18 +37,18 @@
   color: white;
 }
 .post-content .char-limit {
-    /* Style for the character limit */
+    
     font-size: 14px;
     margin-top: 5px;
   }
   
   .post-content .char-limit.yellow {
-    /* Color change for characters 150-189 */
+    /
     color: yellow;
   }
   
   .post-content .char-limit.red {
-    /* Color change for characters 190-200 */
+    
     color: red;
   }
 .post-header {
