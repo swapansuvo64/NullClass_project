@@ -50,8 +50,7 @@
   .tweet-image {
     border-radius: 10px;
   }
-  
-  /* Handling different numbers of images */
+
   .images-1 .tweet-image {
     width: 100%;
   }
