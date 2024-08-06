@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './GoogleTranslate.css'; // Import the CSS file
+import './GoogleTranslate.css'; 
 
 const GoogleTranslate = () => {
   const [isVisible, setIsVisible] = useState(true);
