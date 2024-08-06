@@ -22,11 +22,11 @@
   padding: 20px;
   border-radius: 0px;
   max-width: 600px;
-  margin: 0 auto; /* Center the div on the page */
+  margin: 0 auto; 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   color: white;
   overflow-y: auto;
-  transition: height 0.2s ease; /* Smooth transition for height change */
+  transition: height 0.2s ease;
   transition: color 0.3s ease;
   margin-top: 5%;
   border-bottom:  1px solid rgb(36, 34, 34);
@@ -34,7 +34,7 @@
 }
 
 .feed-close-button {
-  display: none; /* No need for a close button in a normal div */
+  display: none; 
 }
 
 .feed-post-container .feed-char-limit {
@@ -129,7 +129,7 @@
 }
 .premium {
   box-shadow:  0 0 20px 5px rgba(0, 0, 255, 0.5);;
-  border-radius: 50%; /* Adjust based on your design */
+  border-radius: 50%; 
 }
 
 .premium-post {
