@@ -38,7 +38,7 @@
 }
 
 .google-translate-popup .google-element * {
-  color: rgb(12, 12, 12); /* Ensure all text within the div is white */
+  color: rgb(12, 12, 12);
 }
 
 .google-translate-popup .google-element iframe {
