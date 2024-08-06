@@ -17,7 +17,7 @@ const MyPost = ({ onPostCountUpdate, isPremium }) => {
           }
           const data = await response.json();
           setPosts(data);
-          onPostCountUpdate(data.length);  // Update the post count in Profile
+          onPostCountUpdate(data.length);  
         } catch (error) {
           console.error('Error fetching posts:', error);
         }
@@ -33,7 +33,7 @@ const MyPost = ({ onPostCountUpdate, isPremium }) => {
         <div key={index} className="tweet-container">
           <div className="tweet-header">
             <img
-              className={`profile-image ${isPremium ? 'premium' : ''}`} // Apply premium class here
+              className={`profile-image ${isPremium ? 'premium' : ''}`} 
               src={user.photoURL}
               alt="Profile"
             />
